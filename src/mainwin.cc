@@ -1768,7 +1768,7 @@ bool MainWindow::checkEditorModified()
 		auto ret = QMessageBox::warning(this, _("Application"),
 				_("The document has been modified.\n"
 				"Do you really want to reload the file?"),
-				QMessageBox::Yes | QMessageBox::No);
+				QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 		if (ret != QMessageBox::Yes) {
 			return false;
 		}
